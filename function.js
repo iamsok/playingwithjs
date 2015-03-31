@@ -48,17 +48,43 @@
 // document.onclick = function() {
 //   window.alert("Do not click on my page!");
 // };
+/////////////////////////////////////////////////////
 
-function car_cost(mycar, paycheck) {
-  window.alert("You have a " + mycar + "and make $" +paycheck);
-}
-function get_added_text() {
-  var x = "This project ";
-  var y = "is almost fun!";
-  var together = x + y;
-  return together;
-}
-car_cost("mustang", 1500);
-var alerttext=get_added_text();
-window.alert(alerttext);
+// function car_cost(mycar, paycheck) {
+//   window.alert("You have a " + mycar + "and make $" +paycheck);
+// }
+// function get_added_text() {
+//   var x = "This project ";
+//   var y = "is almost fun!";
+//   var together = x + y;
+//   return together;
+// }
+// car_cost("mustang", 1500);
+// var alerttext=get_added_text();
+// window.alert(alerttext);
 
+////////////////////////////////////////////////////
+
+// var myname = "David"; //global
+
+// function say_name() {  //global
+//   var mydog = "Bogey";
+
+//   function say_food() {
+//     var myfood = "Pizza";
+//     window.alert(myname + " and " + mydog + " like " + myfood);
+//   }
+//   window.alert(myname + " has a dog named " + mydog);
+//   say_food();
+// }
+
+// say_name();
+
+////////////////////////////////////////////////////
+
+function display_HTML() {
+  var myheading = "<h1>Hello, World!</h1>"
+  var mytext = "<p>While it is nice to know you world, there are only some things that I am comfortable sharing in a global context. You can’t alter the variable that holds this text outside of the function that contains it! Ha!</p>";
+  document.write(myheading + mytext);
+}
+display_HTML();
